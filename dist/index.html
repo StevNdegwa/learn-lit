@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn Lit</title>
+    <script>var exports = {};</script>
+    <script src="./main.js" type="text/javascript"></script>
+    <link href="./styles.css" rel="stylesheet" />
+    <style>
+        div.container {
+            padding: 20px;
+            border: 1px dotted blue;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        div#notification {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px 2px 5px 5px lightgrey;
+            display: none;
+            transition: display 200ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="notification">
+
+    </div>
+    <header>
+        <h1>E-Commerce Site</h1>
+    </header>
+    <main>
+        <widget-container></widget-container>
+        <div class="container">
+            <payment-form>
+            </payment-form>
+        </div>
+        <div class="container">
+            <fullscreen-popup buttonLabel="Fullscreen Popup"></fullscreen-popup>
+        </div>
+        <div class="container">
+            <user-profiles></user-profiles>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
